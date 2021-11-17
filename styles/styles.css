@@ -1,27 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+html,
 body {
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #252525;
+}
+
+.mockupContainer {
+  background-color: white;
+  height: 100%;
+  min-width: 375px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
 button {
-  background-color: orangered;
+  background-color: #ff640d;
   color: white;
   border-radius: 5px;
   border: 0;
   font-size: 17.5px;
   height: 38px;
-  min-width: 37px;
-}
-
-span {
-  border: solid 2px orangered;
-  font-size: 17.5px;
-  height: 38px;
-  width: 37px;
 }
 
 .priceContainer {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.priceContainer .priceCounter {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 17.5px;
+}
+
+.priceContainer .priceCounter button,
+.priceContainer .priceCounter span {
+  margin-right: 10px;
+  min-height: 35px;
+  max-height: 35px;
+  min-width: 35px;
+  max-width: 35px;
+  border-radius: 5px;
+}
+
+.priceContainer .priceCounter span {
+  color: #ff640d;
+  font-weight: 900;
+  font-size: 21.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceContainer .priceCounter #btnMinus {
+  padding-bottom: 10px;
+}
+
+.priceContainer .buyCounter {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
+.priceContainer .buyCounter button {
+  font-weight: 700;
+  font-size: 17.5px;
 }
