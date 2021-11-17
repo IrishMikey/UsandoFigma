@@ -1,0 +1,27 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17.5px;
+  height: 38px;
+  min-width: 37px;
+}
+
+span {
+  border: solid 2px orangered;
+  font-size: 17.5px;
+  height: 38px;
+  width: 37px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
