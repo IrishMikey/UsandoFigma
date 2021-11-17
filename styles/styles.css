@@ -16,8 +16,8 @@ body {
   height: 100%;
   min-width: 375px;
   display: flex;
-  justify-content: center;
-  padding: 15px;
+  flex-direction: column;
+  padding: 25px 30px 0 26px;
 }
 
 button {
@@ -31,6 +31,7 @@ button {
 
 .priceContainer {
   width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -38,7 +39,6 @@ button {
 
 .priceContainer .priceCounter {
   display: flex;
-  justify-content: center;
   width: 50%;
   font-size: 17.5px;
 }
@@ -75,4 +75,14 @@ button {
 .priceContainer .buyCounter button {
   font-weight: 700;
   font-size: 17.5px;
+}
+
+h1 {
+  font-size: 21.88px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  width: 319px;
 }
