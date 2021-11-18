@@ -1,4 +1,13 @@
 $primary: #ff640d;
-$light:#E5E5E5;
-$secondary:#4A4A4A;
-$dark:#313131;
+$light: #e5e5e5;
+$secondary: #4a4a4a;
+$dark: #313131;
+
+@mixin btnStyle($size) {
+  background-color: $primary;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17.5px;
+  height: $size;
+}

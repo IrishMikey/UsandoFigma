@@ -1,14 +1,6 @@
-@import "./colors", "./sectionA";
+@import "./colors", "./sectionA" , "./sectionB";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-@mixin btnStyle {
-  background-color: $primary;
-  color: white;
-  border-radius: 5px;
-  border: 0;
-  font-size: 17.5px;
-  height: 38px;
-}
 html,
 body {
   height: 100%;
@@ -30,6 +22,4 @@ body {
   flex-direction: column;
 }
 
-button {
-  @include btnStyle; 
-}
+

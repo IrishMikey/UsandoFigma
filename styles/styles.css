@@ -6,6 +6,15 @@
   justify-content: space-evenly;
 }
 
+.priceContainer button {
+  background-color: #ff640d;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17.5px;
+  height: 38px;
+}
+
 .priceContainer .priceCounter {
   display: flex;
   width: 50%;
@@ -89,7 +98,7 @@
   font-weight: bold;
   font-size: 17.5px;
   line-height: 26px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   margin: 0;
 }
 
@@ -121,6 +130,81 @@
   line-height: 18px;
 }
 
+.sectionB {
+  margin: 0 25px;
+}
+
+.sectionB .dishHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionB .dishHeader h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
+}
+
+.sectionB .dishHeader span {
+  color: #ff640d;
+  font-size: 17.5px;
+  line-height: 26px;
+  font-weight: 700;
+  font-size: 17.5px;
+  line-height: 26px;
+}
+
+.sectionB .dish {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.sectionB .dish .dishInfo {
+  margin-left: 13px;
+}
+
+.sectionB .dish .dishInfo h3 {
+  margin: 0;
+  font-size: 17.5px;
+  line-height: 26px;
+}
+
+.sectionB .dish .dishInfo span {
+  font-size: 11.2px;
+  line-height: 17px;
+}
+
+.sectionB .dish .priceInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionB .dish .priceInfo span {
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.sectionB .dish .priceInfo button {
+  background-color: #ff640d;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17.5px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 12.5px;
+  line-height: 19px;
+  width: 72 px;
+  height: 27 px;
+  padding: 6 px;
+  border-radius: 6 px;
+}
+
 html,
 body {
   height: 100%;
@@ -142,13 +226,4 @@ body {
   max-width: 370px;
   display: flex;
   flex-direction: column;
-}
-
-button {
-  background-color: #ff640d;
-  color: white;
-  border-radius: 5px;
-  border: 0;
-  font-size: 17.5px;
-  height: 38px;
 }
