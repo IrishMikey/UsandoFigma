@@ -21,10 +21,12 @@
       line-height: 26px;
     }
   }
-
   .dish {
+    background-color: white;
+    padding: 10px;
     display: flex;
-    margin-bottom: 42px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     .dishInfo {
       margin-left: 13px;
       h3 {
@@ -41,7 +43,8 @@
       display: flex;
       justify-content: space-between;
       span {
-        padding-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-size: 14px;
         line-height: 21px;
       }

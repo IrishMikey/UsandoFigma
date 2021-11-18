@@ -32,6 +32,8 @@
 }
 
 .priceContainer .priceCounter span {
+  background-color: white;
+  border-radius: 5px;
   color: #ff640d;
   font-weight: 900;
   font-size: 21.5px;
@@ -81,18 +83,18 @@
   margin: 0 31px 0 25px;
 }
 
-.user {
+.reviewContainer .user {
   display: flex;
 }
 
-.reviewInfo {
+.reviewContainer .user .reviewInfo {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-left: 19px;
 }
 
-.reviewInfo h2 {
+.reviewContainer .user .reviewInfo h2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -102,30 +104,30 @@
   margin: 0;
 }
 
-.reviewInfo .reviewInfoA {
+.reviewContainer .user .reviewInfo .reviewInfoA {
   display: flex;
   flex-direction: row;
 }
 
-.userDesc {
+.reviewContainer .user .reviewInfo .reviewInfoA .userDesc {
   width: 50%;
 }
 
-.dateContainer {
+.reviewContainer .user .reviewInfo .reviewInfoA .dateContainer {
   width: 50%;
   display: flex;
   align-items: flex-end;
   justify-content: end;
 }
 
-.dateText {
+.reviewContainer .user .reviewInfo .reviewInfoA .dateContainer .dateText {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
 }
 
-.commentContainer p {
+.reviewContainer .user .reviewInfo .commentContainer p {
   font-size: 11.5px;
   line-height: 18px;
 }
@@ -159,8 +161,11 @@
 }
 
 .sectionB .dish {
+  background-color: white;
+  padding: 10px;
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .sectionB .dish .dishInfo {
@@ -184,7 +189,8 @@
 }
 
 .sectionB .dish .priceInfo span {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -205,6 +211,30 @@
   border-radius: 6 px;
 }
 
+.footerNav {
+  background-color: white;
+}
+
+.footerNav .iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerNav .iconContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  margin: 13px;
+  border-radius: 5px;
+}
+
+.footerNav .iconContainer #activeIcon {
+  background-color: #F6F6F7;
+}
+
 html,
 body {
   height: 100%;
@@ -220,8 +250,8 @@ body {
 }
 
 .mockupContainer {
-  background-color: white;
-  height: 100%;
+  background-color: #F6F6F7;
+  height: fit-content;
   min-width: 370px;
   max-width: 370px;
   display: flex;

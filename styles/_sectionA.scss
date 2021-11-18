@@ -1,10 +1,24 @@
+@mixin headingOne {
+  font-size: 21.88px;
+  font-weight: 700;
+  margin: 0;
+}
+@mixin headingTwo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.5px;
+  line-height: 26px;
+  color: $secondary;
+  margin: 0;
+}
 .priceContainer {
   margin: 16px 25px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   button {
-    @include btnStyle(38px); 
+    @include btnStyle(38px);
   }
   .priceCounter {
     display: flex;
@@ -21,6 +35,8 @@
       border-radius: 5px;
     }
     span {
+      background-color: white;
+      border-radius: 5px;
       color: $primary;
       font-weight: 900;
       font-size: 21.5px;
@@ -28,7 +44,7 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     #btnMinus {
       padding-bottom: 10px;
     }
@@ -43,26 +59,10 @@
     }
   }
 }
-
-@mixin headingOne {
-  font-size: 21.88px;
-  font-weight: 700;
-  margin: 0;
-}
-@mixin headingTwo {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17.5px;
-  line-height: 26px;
-  color: $secondary;
-  margin: 0;
-}
-
 .desContainer {
   margin: 25px 30px 15px 26px;
-  h1{
-      @include headingOne;
+  h1 {
+    @include headingOne;
   }
   p {
     margin-top: 10px;
@@ -78,42 +78,42 @@
 .reviewContainer {
   max-width: 320px;
   margin: 0 31px 0 25px;
-}
-.user {
-  display: flex;
-}
-.reviewInfo {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-left: 19px;
-    h2{
-        @include headingTwo;
-    }
-  .reviewInfoA {
+  .user {
     display: flex;
-    flex-direction: row;
-  }
-}
-.userDesc {
-  width: 50%;
-}
-.dateContainer {
-  width: 50%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-}
-.dateText {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-}
-.commentContainer {
-  p {
-    font-size: 11.5px;
-    line-height: 18px;
-    // display: inline-block;
+    .reviewInfo {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 19px;
+      h2 {
+        @include headingTwo;
+      }
+      .reviewInfoA {
+        display: flex;
+        flex-direction: row;
+        .userDesc {
+          width: 50%;
+        }
+        .dateContainer {
+          width: 50%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: end;
+
+          .dateText {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+      .commentContainer {
+        p {
+          font-size: 11.5px;
+          line-height: 18px;
+        }
+      }
+    }
   }
 }
