@@ -21,42 +21,47 @@
       line-height: 26px;
     }
   }
-  .dish {
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    .dishInfo {
-      margin-left: 13px;
-      h3 {
-        margin: 0;
-        font-size: 17.5px;
-        line-height: 26px;
-      }
-      span {
-        font-size: 11.2px;
-        line-height: 17px;
-      }
-    }
-    .priceInfo {
+  .dishes{
+    padding-bottom: 46px;
+    .dish {
+      background-color: white;
+      padding: 10px;
       display: flex;
-      justify-content: space-between;
-      span {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 14px;
-        line-height: 21px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      gap: 15px;
+      .dishInfo {
+        flex-grow: 1;
+  
+        h3 {
+          margin: 0;
+          font-size: 17.5px;
+          line-height: 26px;
+        }
+        span {
+          font-size: 11.2px;
+          line-height: 17px;
+        }
       }
-      button {
-        @include btnStyle(25px);
-        font-weight: bold;
-        font-size: 12.5px;
-        line-height: 19px;
-        width: 72 px;
-        height: 27 px;
-        padding: 6 px;
-        border-radius: 6 px;
+      .priceInfo {
+        display: flex;
+        justify-content: space-between;
+        span {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 14px;
+          line-height: 21px;
+        }
+        button {
+          @include btnStyle(25px);
+          font-weight: bold;
+          font-size: 12.5px;
+          line-height: 19px;
+          width: 72 px;
+          height: 27 px;
+          padding: 6 px;
+          border-radius: 6 px;
+        }
       }
     }
   }

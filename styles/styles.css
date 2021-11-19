@@ -58,7 +58,7 @@
 }
 
 .desContainer {
-  margin: 25px 30px 15px 26px;
+  margin: 25px 30px 0 26px;
 }
 
 .desContainer h1 {
@@ -74,24 +74,27 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  width: 319px;
   height: 76px;
 }
 
 .reviewContainer {
-  max-width: 320px;
   margin: 0 31px 0 25px;
+}
+
+.reviewContainer h1 {
+  margin-top: 0;
 }
 
 .reviewContainer .user {
   display: flex;
+  gap: 19px;
 }
 
 .reviewContainer .user .reviewInfo {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 19px;
+  justify-content: space-around;
 }
 
 .reviewContainer .user .reviewInfo h2 {
@@ -107,17 +110,12 @@
 .reviewContainer .user .reviewInfo .reviewInfoA {
   display: flex;
   flex-direction: row;
-}
-
-.reviewContainer .user .reviewInfo .reviewInfoA .userDesc {
-  width: 50%;
+  justify-content: space-between;
 }
 
 .reviewContainer .user .reviewInfo .reviewInfoA .dateContainer {
-  width: 50%;
   display: flex;
   align-items: flex-end;
-  justify-content: end;
 }
 
 .reviewContainer .user .reviewInfo .reviewInfoA .dateContainer .dateText {
@@ -160,42 +158,47 @@
   line-height: 26px;
 }
 
-.sectionB .dish {
+.sectionB .dishes {
+  padding-bottom: 46px;
+}
+
+.sectionB .dishes .dish {
   background-color: white;
   padding: 10px;
   display: flex;
   margin-bottom: 20px;
   border-radius: 5px;
+  gap: 15px;
 }
 
-.sectionB .dish .dishInfo {
-  margin-left: 13px;
+.sectionB .dishes .dish .dishInfo {
+  flex-grow: 1;
 }
 
-.sectionB .dish .dishInfo h3 {
+.sectionB .dishes .dish .dishInfo h3 {
   margin: 0;
   font-size: 17.5px;
   line-height: 26px;
 }
 
-.sectionB .dish .dishInfo span {
+.sectionB .dishes .dish .dishInfo span {
   font-size: 11.2px;
   line-height: 17px;
 }
 
-.sectionB .dish .priceInfo {
+.sectionB .dishes .dish .priceInfo {
   display: flex;
   justify-content: space-between;
 }
 
-.sectionB .dish .priceInfo span {
+.sectionB .dishes .dish .priceInfo span {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 14px;
   line-height: 21px;
 }
 
-.sectionB .dish .priceInfo button {
+.sectionB .dishes .dish .priceInfo button {
   background-color: #ff640d;
   color: white;
   border-radius: 5px;
@@ -212,6 +215,9 @@
 }
 
 .footerNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: white;
 }
 
@@ -246,14 +252,12 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
-  background-color: #2d2d3d;
 }
 
 .mockupContainer {
   background-color: #F6F6F7;
   height: fit-content;
-  min-width: 370px;
-  max-width: 370px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }

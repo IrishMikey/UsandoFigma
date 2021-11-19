@@ -60,7 +60,7 @@
   }
 }
 .desContainer {
-  margin: 25px 30px 15px 26px;
+  margin: 25px 30px 0 26px;
   h1 {
     @include headingOne;
   }
@@ -71,35 +71,32 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    width: 319px;
     height: 76px;
   }
 }
 .reviewContainer {
-  max-width: 320px;
   margin: 0 31px 0 25px;
+  h1{
+    margin-top: 0;
+  }
   .user {
     display: flex;
+    gap: 19px;
     .reviewInfo {
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin-left: 19px;
+      justify-content: space-around;
       h2 {
         @include headingTwo;
       }
       .reviewInfoA {
         display: flex;
         flex-direction: row;
-        .userDesc {
-          width: 50%;
-        }
+        justify-content: space-between;
         .dateContainer {
-          width: 50%;
           display: flex;
           align-items: flex-end;
-          justify-content: end;
-
           .dateText {
             font-style: normal;
             font-weight: 700;

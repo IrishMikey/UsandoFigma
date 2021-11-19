@@ -1,5 +1,8 @@
 .footerNav {
-    background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
   .iconContainer {
     display: flex;
     flex-direction: row;
@@ -11,10 +14,10 @@
       height: 46px;
       width: 46px;
       margin: 13px;
-      border-radius:5px ;
+      border-radius: 5px;
     }
-    #activeIcon{
-        background-color: $light;
+    #activeIcon {
+      background-color: $light;
     }
   }
 }
