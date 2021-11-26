@@ -1,0 +1,23 @@
+.footerNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      width: 46px;
+      margin: 13px;
+      border-radius: 5px;
+    }
+    #activeIcon {
+      background-color: $light;
+    }
+  }
+}

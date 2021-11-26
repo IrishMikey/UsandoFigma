@@ -1,0 +1,116 @@
+@mixin headingOne {
+  font-size: 21.88px;
+  font-weight: 700;
+  margin: 0;
+}
+@mixin headingTwo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.5px;
+  line-height: 26px;
+  color: $secondary;
+  margin: 0;
+}
+.priceContainer {
+  margin: 16px 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  button {
+    @include btnStyle(38px);
+  }
+  .priceCounter {
+    display: flex;
+    width: 50%;
+    font-size: 17.5px;
+
+    button,
+    span {
+      margin-right: 10px;
+      min-height: 35px;
+      max-height: 35px;
+      min-width: 35px;
+      max-width: 35px;
+      border-radius: 5px;
+    }
+    span {
+      background-color: white;
+      border-radius: 5px;
+      color: $primary;
+      font-weight: 900;
+      font-size: 21.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #btnMinus {
+      padding-bottom: 10px;
+    }
+  }
+  .buyCounter {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    button {
+      font-weight: 700;
+      font-size: 17.5px;
+    }
+  }
+}
+.desContainer {
+  margin: 25px 30px 0 26px;
+  h1 {
+    @include headingOne;
+  }
+  p {
+    margin-top: 10px;
+    padding-top: 0px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    height: 76px;
+  }
+}
+.reviewContainer {
+  margin: 0 31px 0 25px;
+  h1{
+    margin-top: 0;
+  }
+  .user {
+    display: flex;
+    gap: 19px;
+    .reviewInfo {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+      h2 {
+        @include headingTwo;
+      }
+      .reviewInfoA {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .dateContainer {
+          display: flex;
+          align-items: flex-end;
+          .dateText {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+      .commentContainer {
+        p {
+          font-size: 11.5px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

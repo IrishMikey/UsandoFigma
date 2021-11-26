@@ -1,40 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.priceContainer {
+  margin: 16px 25px 0;
   display: flex;
-  justify-content: center;
-  background-color: #252525;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.mockupContainer {
-  background-color: white;
-  height: 100%;
-  min-width: 375px;
-  display: flex;
-  flex-direction: column;
-  padding: 25px 30px 0 26px;
-}
-
-button {
+.priceContainer button {
   background-color: #ff640d;
   color: white;
   border-radius: 5px;
   border: 0;
   font-size: 17.5px;
   height: 38px;
-}
-
-.priceContainer {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .priceContainer .priceCounter {
@@ -54,6 +32,8 @@ button {
 }
 
 .priceContainer .priceCounter span {
+  background-color: white;
+  border-radius: 5px;
   color: #ff640d;
   font-weight: 900;
   font-size: 21.5px;
@@ -77,12 +57,207 @@ button {
   font-size: 17.5px;
 }
 
-h1 {
-  font-size: 21.88px;
-  font-weight: bold;
+.desContainer {
+  margin: 25px 30px 0 26px;
 }
 
-p {
+.desContainer h1 {
+  font-size: 21.88px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.desContainer p {
+  margin-top: 10px;
+  padding-top: 0px;
+  font-family: Poppins;
+  font-weight: 400;
   font-size: 12px;
-  width: 319px;
+  line-height: 18px;
+  height: 76px;
+}
+
+.reviewContainer {
+  margin: 0 31px 0 25px;
+}
+
+.reviewContainer h1 {
+  margin-top: 0;
+}
+
+.reviewContainer .user {
+  display: flex;
+  gap: 19px;
+}
+
+.reviewContainer .user .reviewInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.reviewContainer .user .reviewInfo h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.5px;
+  line-height: 26px;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.reviewContainer .user .reviewInfo .reviewInfoA {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviewContainer .user .reviewInfo .reviewInfoA .dateContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.reviewContainer .user .reviewInfo .reviewInfoA .dateContainer .dateText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.reviewContainer .user .reviewInfo .commentContainer p {
+  font-size: 11.5px;
+  line-height: 18px;
+}
+
+.sectionB {
+  margin: 0 25px;
+}
+
+.sectionB .dishHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionB .dishHeader h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
+}
+
+.sectionB .dishHeader span {
+  color: #ff640d;
+  font-size: 17.5px;
+  line-height: 26px;
+  font-weight: 700;
+  font-size: 17.5px;
+  line-height: 26px;
+}
+
+.sectionB .dishes {
+  padding-bottom: 46px;
+}
+
+.sectionB .dishes .dish {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+.sectionB .dishes .dish .dishInfo {
+  flex-grow: 1;
+}
+
+.sectionB .dishes .dish .dishInfo h3 {
+  margin: 0;
+  font-size: 17.5px;
+  line-height: 26px;
+}
+
+.sectionB .dishes .dish .dishInfo span {
+  font-size: 11.2px;
+  line-height: 17px;
+}
+
+.sectionB .dishes .dish .priceInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionB .dishes .dish .priceInfo span {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.sectionB .dishes .dish .priceInfo button {
+  background-color: #ff640d;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17.5px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 12.5px;
+  line-height: 19px;
+  width: 72 px;
+  height: 27 px;
+  padding: 6 px;
+  border-radius: 6 px;
+}
+
+.footerNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.footerNav .iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerNav .iconContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  margin: 13px;
+  border-radius: 5px;
+}
+
+.footerNav .iconContainer #activeIcon {
+  background-color: #F6F6F7;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.mockupContainer {
+  background-color: #F6F6F7;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
